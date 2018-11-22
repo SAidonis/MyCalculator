@@ -30,6 +30,18 @@ public class MyCalculator {
    return num;
  }
 
+ private static String enterOperator(){
+   Scanner scan = new Scanner (System.in);
+   String operator;
+   do {
+     System.out.println("Choose operator +, -, *, / or q to quit");
+     operator = scan.next();
+   } while ((operator.equals("q") || operator.equals("+") ||
+             operator.equals("-") || operator.equals("*") ||
+             operator.equals("/"))==false);
+   return operator;
+  }
+  
     public static void main(String[] args){
 
     }
